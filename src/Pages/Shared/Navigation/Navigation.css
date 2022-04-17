@@ -30,16 +30,11 @@
 }
 
 .navbar-links a:hover {
-    color: rgb(74, 167, 255);
+    color: rgb(48, 155, 255);
 }
 
-.button-login {
-    color: rgb(74, 167, 255);
-    border: 1px solid rgb(74, 167, 255);
-}
-
-.button-login:hover {
-    background-color: rgb(74, 167, 255);
-    border: 1px solid rgb(74, 167, 255);
+.button-navbar-signup {
+    background-color: rgb(48, 155, 255);
     color: white;
+    border: 1px solid rgb(48, 155, 255);
 }

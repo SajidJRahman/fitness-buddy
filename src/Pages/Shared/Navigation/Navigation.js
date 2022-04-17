@@ -11,7 +11,7 @@ const Navigation = () => {
         return (
             <div>
                 <Link
-                    style={{ color: match ? 'rgb(74, 167, 255)' : '' }}
+                    style={{ color: match ? 'rgb(48, 155, 255)' : '' }}
                     to={to}
                     {...props}
                 >
@@ -46,10 +46,10 @@ const Navigation = () => {
                             </nav>
                         </Nav>
                         <Link to='/login'>
-                            <button className='button-login btn btn-outline-primary rounded-pill px-4'>Login</button>
+                            <button className='btn btn-outline-dark rounded-pill px-4'>Login</button>
                         </Link>
                         <Link to='/sign-up'>
-                            <button className='button-login btn btn-outline-primary rounded-pill px-4 ms-3'>Sign Up</button>
+                            <button className='button-navbar-signup btn btn-outline-primary rounded-pill px-4 ms-3'>Sign Up</button>
                         </Link>
                     </Navbar.Collapse>
                 </Container>

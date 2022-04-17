@@ -9,18 +9,18 @@ const Login = () => {
         <div className='login mx-auto'>
             <h1>Login</h1>
             <p>Stay updated on your fitness world</p>
-            <div className='input-fields text-center'>
+            <div className='login-input-fields text-center'>
                 <input type="email" name="email" id="" placeholder='Enter email' required />
                 <br />
                 <input type="password" name="password" id="" placeholder='Enter password' required />
-                <p className='forget-password btn-link'>Forgot password?</p>
-                <button className='button-submit btn rounded-pill' type="submit">Login</button>
+                <p className='forgot-password btn-link'>Forgot password?</p>
+                <button className='button-login btn rounded-pill' type="submit">Login</button>
                 <p className='link-to-signup'>
                     New to FitnessBuddy?
                     <Link to='/sign-up'> Sign Up Here</Link>
                 </p>
             </div>
-            <div className='or-section'>
+            <div className='or-login-section'>
                 <div></div>
                 <p className='mx-2 mb-0'>or</p>
                 <div></div>

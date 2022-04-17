@@ -16,31 +16,31 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.input-fields input {
+.login-input-fields input {
     height: 50px;
     width: 100%;
     font-family: 'Roboto', sans-serif;
     border: 2px solid rgb(199, 199, 199);
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 15px;
     margin: 10px 0px;
 }
 
-.input-fields input:focus {
+.login-input-fields input:focus {
     border-color: rgba(61, 181, 255, 0.501);
     box-shadow: 0px 0px 0px rgba(61, 181, 255, 0.673) inset, 0px 0px 1px 3px rgba(74, 185, 255, 0.519);
     outline: 0;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.forget-password {
+.forgot-password {
     cursor: pointer;
     text-decoration: none;
     font-weight: bold;
     margin: 0px;
 }
 
-.button-submit {
+.button-login {
     width: 100%;
     padding: 12px 0px;
     margin: 10px 0px;
@@ -49,7 +49,7 @@
     font-weight: bold;
 }
 
-.button-submit:hover {
+.button-login:hover {
     background-color: rgb(0, 132, 255);
     color: white;
 }
@@ -65,14 +65,14 @@
     text-decoration: none;
 }
 
-.or-section {
+.or-login-section {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.or-section div {
+.or-login-section div {
     background-color: gray;
     width: 100%;
     height: 1px;
