@@ -1,11 +1,45 @@
 import React from 'react';
 import './Footer.css';
+import Twitter from '../../../images/logos/Twitter.svg';
+import Facebook from '../../../images/logos/Facebook.svg';
+import Instagram from '../../../images/logos/Instagram.svg';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div>
-
-        </div>
+        <footer id='footer'>
+            <div className='social'>
+                <h1>FitnessBuddy</h1>
+                <div className='social-links'>
+                    <a rel="noopener noreferrer" target='_blank' href="https://twitter.com/sajidjrahman"><img src={Twitter} alt="" /></a>
+                    <a rel="noopener noreferrer" target='_blank' href="https://instagram.com/sajidjrahman"><img src={Instagram} alt="" /></a>
+                    <a rel="noopener noreferrer" target='_blank' href="https://facebook.com/sajidjrahman"><img src={Facebook} alt="" /></a>
+                </div>
+            </div>
+            <div className='footer-navigation'>
+                <div className='footer-links'>
+                    <p>Support</p>
+                    <Link to="/home#footer">Contect Me</Link>
+                    <br />
+                    <Link to="/home#footer">FAQ</Link>
+                    <br />
+                    <Link to="/home#footer">Blogs</Link>
+                    <br />
+                    <Link to="/home#footer">Newsroom</Link>
+                </div>
+                <div className='footer-links'>
+                    <p>FitnessBuddy</p>
+                    <Link to="/home#footer">About FitnessBuddy</Link>
+                    <br />
+                    <Link to="/home#footer">Checkout</Link>
+                    <br />
+                    <Link to="/home#footer">Login</Link>
+                    <br />
+                    <Link to="/home#footer">Sign Up</Link>
+                </div>
+            </div>
+            <p className='copyright'>Copyright © 2022 by Sajid Rahman</p>
+        </footer>
     );
 };
 

@@ -28,7 +28,7 @@ const Navigation = () => {
                 <Container>
                     <Navbar.Brand>
                         <Link className='navbar-main-link' to='/'>
-                            <h1>FitnessFreak</h1>
+                            <h1>FitnessBuddy</h1>
                         </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />

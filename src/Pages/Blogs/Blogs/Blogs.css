@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .blogs-questions {
-    margin: 130px 60px 0px 60px;
+    margin: 130px 60px 60px 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;

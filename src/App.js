@@ -7,6 +7,7 @@ import Blogs from './Pages/Blogs/Blogs/Blogs';
 import Login from './Pages/Authentications/Login/Login';
 import SignUp from './Pages/Authentications/SignUp/SignUp';
 import About from './Pages/About/About/About';
+import Footer from './Pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/about-me' element={<About />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
