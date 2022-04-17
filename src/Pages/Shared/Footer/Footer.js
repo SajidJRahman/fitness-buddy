@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import Twitter from '../../../images/logos/Twitter.svg';
+import YouTube from '../../../images/logos/YouTube.png';
 import Facebook from '../../../images/logos/Facebook.svg';
 import Instagram from '../../../images/logos/Instagram.svg';
 import { Link } from 'react-router-dom';
@@ -14,6 +15,7 @@ const Footer = () => {
                     <a rel="noopener noreferrer" target='_blank' href="https://twitter.com/sajidjrahman"><img src={Twitter} alt="" /></a>
                     <a rel="noopener noreferrer" target='_blank' href="https://instagram.com/sajidjrahman"><img src={Instagram} alt="" /></a>
                     <a rel="noopener noreferrer" target='_blank' href="https://facebook.com/sajidjrahman"><img src={Facebook} alt="" /></a>
+                    <a rel="noopener noreferrer" target='_blank' href="https://www.youtube.com/channel/UCZmJKsZ84FWv5QMKmgLtUeg"><img src={YouTube} alt="" /></a>
                 </div>
             </div>
             <div className='footer-navigation'>
@@ -29,13 +31,13 @@ const Footer = () => {
                 </div>
                 <div className='footer-links'>
                     <p>FitnessBuddy</p>
-                    <Link to="/home#footer">About FitnessBuddy</Link>
+                    <Link to="/about">About FitnessBuddy</Link>
                     <br />
-                    <Link to="/home#footer">Checkout</Link>
+                    <Link to="/checkout">Checkout</Link>
                     <br />
-                    <Link to="/home#footer">Login</Link>
+                    <Link to="/login">Login</Link>
                     <br />
-                    <Link to="/home#footer">Sign Up</Link>
+                    <Link to="/sign-up">Sign Up</Link>
                 </div>
             </div>
             <p className='copyright'>Copyright © 2022 by Sajid Rahman</p>

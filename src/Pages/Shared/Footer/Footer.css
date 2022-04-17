@@ -27,12 +27,12 @@
 .footer-navigation {
     display: flex;
     justify-content: center;
-    text-align: center;
 }
 
 .footer-links {
     padding: 20px;
     margin-bottom: 40px;
+    margin: 0px 20px 20px 20px;
 }
 
 .footer-links p {
@@ -44,11 +44,11 @@
     text-decoration: none;
     color: white;
     font-family: 'Roboto', sans-serif;
-    margin: 20px;
 }
 
 .copyright {
     font-family: 'Roboto', sans-serif;
+    font-size: 13px;
     text-align: center;
     color: gray;
     margin-bottom: 0px;
