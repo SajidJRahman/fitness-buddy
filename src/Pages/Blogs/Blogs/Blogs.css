@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.blogs-questions {
+    margin: 130px 60px 0px 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.blogs-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0, 0px 0px 15px rgba(148, 153, 255, 0.706);
+}
+
+.blogs-card h5 {
+    color: rgb(56, 56, 56);
+    background-color: rgb(168, 215, 254);
+    border-radius: 19px 19px 0px 0px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blogs-card p {
+    padding: 20px 25px;
+    font-family: 'Roboto', sans-serif;
+}

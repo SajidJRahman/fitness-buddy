@@ -1,12 +1,30 @@
 import React from 'react';
-import { Button, Container, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import './Navigation.css';
 
 const Navigation = () => {
+    const CustomLink = ({ children, to, ...props }) => {
+        let resolved = useResolvedPath(to);
+        let match = useMatch({ path: resolved.pathname, end: true });
+
+        return (
+            <div>
+                <Link
+                    style={{ color: match ? 'rgb(74, 167, 255)' : '' }}
+                    to={to}
+                    {...props}
+                >
+                    {children}
+                </Link>
+                {match && ""}
+            </div >
+        );
+    }
+
     return (
         <div>
-            <Navbar className='navigation' fixed="top" bg="light" expand="lg">
+            <Navbar className='navigation fixed-top' bg="light" expand="lg">
                 <Container>
                     <Navbar.Brand>
                         <Link className='navbar-main-link' to='/'>
@@ -21,9 +39,10 @@ const Navigation = () => {
                             navbarScroll
                         >
                             <nav className='navbar-links'>
-                                <Link to='/checkout'>Checkout</Link>
-                                <Link to='/blogs'>Blogs</Link>
-                                <Link to='/about'>About Me</Link>
+                                <CustomLink to='/home'>Home</CustomLink>
+                                <CustomLink to='/checkout'>Checkout</CustomLink>
+                                <CustomLink to='/blogs'>Blogs</CustomLink>
+                                <CustomLink to='/about'>About Me</CustomLink>
                             </nav>
                         </Nav>
                         <Link to='/login'>

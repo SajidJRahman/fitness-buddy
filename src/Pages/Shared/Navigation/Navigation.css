@@ -18,6 +18,10 @@
     margin: 0px;
 }
 
+.navbar-links {
+    display: flex;
+}
+
 .navbar-links a {
     font-weight: bold;
     text-decoration: none;
