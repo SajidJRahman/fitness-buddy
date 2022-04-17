@@ -17,7 +17,7 @@ const Banner = () => {
                 <Carousel.Caption>
                     <h3>Welcome! I'm your new fitness trainer!</h3>
                     <p>I can help you choose what meets your need.</p>
-                    <button href='#programs' className='btn btn-dark rounded-pill px-4'>Book Services</button>
+                    <button href='#programs' className='btn button-carousel rounded-pill px-4'>Book Services</button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -30,7 +30,7 @@ const Banner = () => {
                 <Carousel.Caption>
                     <h3>I currently provide six different programs</h3>
                     <p>You can choose any of them! I plan forward to increase my programs.</p>
-                    <button href='#programs' className='btn btn-dark rounded-pill px-4'>Book Services</button>
+                    <button href='#programs' className='btn button-carousel rounded-pill px-4'>Book Services</button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -43,7 +43,7 @@ const Banner = () => {
                 <Carousel.Caption>
                     <h3>Join classes anywhere, anytime!</h3>
                     <p>You can choose to do practice from anywhere with online videos!</p>
-                    <button href='#programs' className='btn btn-dark rounded-pill px-4'>Book Services</button>
+                    <button href='#programs' className='btn button-carousel rounded-pill px-4'>Book Services</button>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
