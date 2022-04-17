@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.navigation {
+    padding: 15px 20;
+}
+
+.navbar-main-link {
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+    color: rgb(255, 104, 58);
+}
+
+.navbar-main-link:hover {
+    color: rgb(255, 104, 58);
+}
+
+.navbar-main-link h1 {
+    margin: 0px;
+}
+
+.navbar-links a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px;
+}
+
+.navbar-links a:hover {
+    color: rgb(74, 167, 255);
+}
+
+.button-login {
+    color: rgb(74, 167, 255);
+    border: 1px solid rgb(74, 167, 255);
+}
+
+.button-login:hover {
+    background-color: rgb(74, 167, 255);
+    border: 1px solid rgb(74, 167, 255);
+    color: white;
+}
