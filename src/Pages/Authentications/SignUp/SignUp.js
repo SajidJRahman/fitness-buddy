@@ -12,7 +12,6 @@ const SignUp = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    const [validated, setValidated] = useState(false);
     const [emailErrorMessage, setEmailErrorMessage] = useState('');
     const [passwordErrorMessage, setPasswordErrorMessage] = useState('');
     const [
@@ -61,17 +60,6 @@ const SignUp = () => {
 
     const handleSignIn = event => {
         event.preventDefault();
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-            return;
-        }
-
-        setValidated(true);
-
-        createUserWithEmailAndPassword(email, password)
-        updateProfile({ displayName: name })
 
         if (!validateEmail(email) || email === '') {
             setEmailErrorMessage('Please enter a valid email address!');
@@ -97,7 +85,7 @@ const SignUp = () => {
         <div className='sign-up mx-auto'>
             <h1>Sign Up</h1>
             <p>Create an account to stay updated on your fitness world</p>
-            <form className='sign-up-input-fields text-center' noValidate validated={validated}>
+            <form className='sign-up-input-fields text-center'>
                 <input onBlur={handleName} type="text" name="name" id="" placeholder='Enter name' />
                 <input onBlur={handleEmail} type="email" name="email" id="" placeholder='Enter email' required />
                 <p className='error-message'>{emailErrorMessage}</p>
