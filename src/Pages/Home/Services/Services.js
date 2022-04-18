@@ -9,7 +9,7 @@ const Services = () => {
             <div className='services-programs'>
                 <div className='programs program-one' >
                     <div className='programs-info'>
-                        < h4>Killer Glutes Program</ h4>
+                        < h4>Glutes Program</ h4>
                         <div className='program-description mx-auto'>
                             <p>This Program Includes:</p>
                             <p>20 Squats</p>

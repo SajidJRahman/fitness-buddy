@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.about-me {
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.about-me h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-me p {
+    font-family: 'Roboto', sans-serif;
+}

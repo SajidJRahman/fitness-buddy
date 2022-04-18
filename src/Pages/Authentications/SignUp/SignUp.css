@@ -35,7 +35,6 @@
 
 .error-message {
     margin: 0px;
-    /* font-weight: 400; */
     color: red;
 }
 
@@ -96,4 +95,25 @@
     font-weight: 600;
     margin: 0;
     padding-left: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .sign-up {
+        width: 60%;
+        margin: 100px 0px 40px 0px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:767px) {
+    .sign-up {
+        width: 90%;
+        margin: 100px 0px 40px 0px;
+    }
+}
+
+@media only screen and (min-width:340px) and (max-width: 576px) {
+    .sign-up {
+        width: 90%;
+        margin: 90px 0px 30px 0px;
+    }
 }
