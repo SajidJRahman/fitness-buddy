@@ -14,22 +14,41 @@ const SignUp = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [emailErrorMessage, setEmailErrorMessage] = useState('');
     const [passwordErrorMessage, setPasswordErrorMessage] = useState('');
+    const navigate = useNavigate();
+
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-    const [updateProfile, updating, profileError] = useUpdateProfile(auth);
-    const navigate = useNavigate();
-    const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
-    const [signInWithGithub, githubUser, githubLoading, githubError] = useSignInWithGithub(auth);
+
+    const [
+        updateProfile,
+        updating,
+        profileError
+    ] = useUpdateProfile(auth);
+
+    const [
+        signInWithGoogle,
+        googleUser,
+        googleLoading,
+        googleError
+    ] = useSignInWithGoogle(auth);
+
+    const [
+        signInWithGithub,
+        githubUser,
+        githubLoading,
+        githubError
+    ] = useSignInWithGithub(auth);
 
     if (loading || updating || googleLoading || githubLoading) {
         return <Loader />;
     }
 
     if (user || googleUser || githubUser) {
+        updateProfile({ displayName: name });
         navigate('/home');
     }
 
@@ -71,10 +90,10 @@ const SignUp = () => {
             return;
         }
 
-        if (password === confirmPassword) {
-            createUserWithEmailAndPassword(email, password)
-            updateProfile({ displayName: name })
+        if (password !== confirmPassword) {
+            createUserWithEmailAndPassword(email, password);
         }
+
         else {
             setPasswordErrorMessage("Sorry, your passwords didn't matched!")
             return;
@@ -91,12 +110,12 @@ const SignUp = () => {
                 <p className='error-message'>{emailErrorMessage}</p>
                 <input onBlur={handlePassword} type="password" name="password" id="" placeholder='Enter password' required />
                 <p className='error-message'>{passwordErrorMessage}</p>
-                <input onBlur={handleConfirmPassword} type="password" name="confirm-password" id="" placeholder='Confirm password' required />
+                <input onBlur={handleConfirmPassword} type="password" name="password" id="" placeholder='Confirm password' required />
                 <p className='error-message'>{passwordErrorMessage}</p>
                 <button onClick={handleSignIn} className='button-sign-up btn rounded-pill' type="submit">Sign Up</button>
                 <p className='link-to-login'>
                     Already FitnessBuddy's Member?
-                    <Link to='/login'> Login Here</Link>
+                    <Link to='/login'> Login</Link>
                 </p>
             </form>
             <div className='or-signup-section'>
