@@ -94,6 +94,8 @@
 }
 
 .other-login-method h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
     margin: 0;
     padding-left: 10px;
 }

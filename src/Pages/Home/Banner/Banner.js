@@ -7,7 +7,7 @@ import BannerThree from '../../../images/banner/banner-3.png';
 
 const Banner = () => {
     return (
-        <Carousel fade>
+        <Carousel style={{ marginTop: '72px' }} fade>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
