@@ -3,3 +3,12 @@
     color: white;
     font-weight: bold;
 }
+
+.button-carousel a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-carousel a:hover {
+    color: black;
+}

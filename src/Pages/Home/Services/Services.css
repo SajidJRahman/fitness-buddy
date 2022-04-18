@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.services {
+    margin: 50px 0px;
+}
+
+.services h2 {
+    text-align: center;
+    margin: 50px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.services-programs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+    margin: 0px 40px;
+}
+
+.services-programs img {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.services-programs p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.programs {
+    border-radius: 10px;
+    height: 400px;
+    box-shadow: 0px 0px 0px rgba(61, 181, 255, 0.866) inset, 0px 0px 1px 5px rgba(74, 185, 255, 0.519);
+
+}
+
+.program-one {
+    background-image: url('../../../images/services/service-1.jpg');
+    background-size: cover;
+}
+
+.program-one h4 {
+    background-color: rgba(255, 255, 255, 0.682);
+    border-radius: 5px;
+}
+
+.program-two {
+    background-image: url('../../../images/services/service-2.jpg');
+    background-size: cover;
+}
+
+.program-two h4 {
+    background-color: rgba(255, 255, 255, 0.682);
+    border-radius: 5px;
+}
+
+.program-three {
+    background-image: url('../../../images/services/service-3.jpg');
+    background-size: cover;
+}
+
+.program-three h4 {
+    background-color: rgba(255, 255, 255, 0.682);
+    border-radius: 5px;
+}
+
+.program-four {
+    background-image: url('../../../images/services/service-4.jpg');
+    background-size: cover;
+}
+
+.program-four h4 {
+    background-color: rgba(255, 255, 255, 0.682);
+    border-radius: 5px;
+}
+
+.program-five {
+    background-image: url('../../../images/services/service-5.jpg');
+    background-size: cover;
+}
+
+.program-five h4 {
+    background-color: rgba(255, 255, 255, 0.682);
+    border-radius: 5px;
+}
+
+.program-six {
+    background-image: url('../../../images/services/service-6.jpg');
+    background-size: cover;
+}
+
+.program-six h4 {
+    background-color: rgba(255, 255, 255, 0.682);
+    border-radius: 5px;
+}
+
+.programs:hover {
+    box-shadow: 0px 0px 0px rgba(61, 181, 255, 0.866) inset, 0px 0px 1px 5px rgba(74, 185, 255, 0.519);
+    outline: 0;
+    transition: color .10s ease-in-out, background-color .10s ease-in-out, border-color .10s ease-in-out, box-shadow .10s ease-in-out;
+}
+
+.programs-info {
+    padding: 15px;
+}
+
+.programs-info h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+
+.programs-info p {
+    margin: 0px;
+}
+
+.program-description {
+    margin-top: 123px;
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgba(255, 255, 255, 0.682);
+    border-radius: 5px;
+    font-weight: bolder;
+    padding: 5px 0px;
+}
+
+.services-button {
+    background-color: rgb(48, 155, 255);
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    padding: 10px 0px;
+    position: relative;
+    top: 20px;
+}
