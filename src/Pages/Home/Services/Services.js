@@ -16,9 +16,10 @@ const Services = () => {
                             <p>Squat Jumps</p>
                             <p>20 Reverse Lunges</p>
                             <p>20 Fire Hydrants</p>
+                            <p className='program-price text-link'>For Just 5.99€/month</p>
                         </div>
                         <Link to='/checkout'>
-                            <button className='services-button btn rounded-pill'>Book Program</button>
+                            <button className='services-button btn rounded-pill'>Book This Program</button>
                         </Link>
                     </div>
                 </div>
@@ -31,9 +32,10 @@ const Services = () => {
                             <p>20 Leg Swings</p>
                             <p>30 Hip Lifts</p>
                             <p>30 Sliders</p>
+                            <p className='program-price text-link'>For Just 4.99€/month</p>
                         </div>
                         <Link to='/checkout'>
-                            <button className='services-button btn rounded-pill'>Book Program</button>
+                            <button className='services-button btn rounded-pill'>Book This Program</button>
                         </Link>
                     </div>
                 </div>
@@ -46,9 +48,10 @@ const Services = () => {
                             <p>Plank Jacks</p>
                             <p>Plank</p>
                             <p>Reverse Crunch</p>
+                            <p className='program-price text-link'>For Just 7.99€/month</p>
                         </div>
                         <Link to='/checkout'>
-                            <button className='services-button btn rounded-pill'>Book Program</button>
+                            <button className='services-button btn rounded-pill'>Book This Program</button>
                         </Link>
                     </div>
                 </div>
@@ -61,9 +64,10 @@ const Services = () => {
                             <p>Spiritual Meditation</p>
                             <p>Focused Meditation</p>
                             <p>Mantra Meditation</p>
+                            <p className='program-price text-link'>For Just 5.99€/month</p>
                         </div>
                         <Link to='/checkout'>
-                            <button className='services-button btn rounded-pill'>Book Program</button>
+                            <button className='services-button btn rounded-pill'>Book This Program</button>
                         </Link>
                     </div>
                 </div>
@@ -76,9 +80,10 @@ const Services = () => {
                             <p>Healthy Back</p>
                             <p>Core Awakening</p>
                             <p>Hip Openers</p>
+                            <p className='program-price text-link'>For Just 5.99€/month</p>
                         </div>
                         <Link to='/checkout'>
-                            <button className='services-button btn rounded-pill'>Book Program</button>
+                            <button className='services-button btn rounded-pill'>Book This Program</button>
                         </Link>
                     </div>
                 </div>
@@ -91,9 +96,10 @@ const Services = () => {
                             <p>Lateral Lunges</p>
                             <p>Walking Lunges</p>
                             <p>Seated Med Ball Twist</p>
+                            <p className='program-price text-link'>For Just 9.99€/month</p>
                         </div>
                         <Link to='/checkout'>
-                            <button className='services-button btn rounded-pill'>Book Program</button>
+                            <button className='services-button btn rounded-pill'>Book This Program</button>
                         </Link>
                     </div>
                 </div>

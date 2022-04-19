@@ -58,16 +58,21 @@ const Navigation = () => {
                         </nav>
                     </Nav>
                     {
-                        user?.photoURL && <img className='rounded-pill mx-3' width='45px' src={user.photoURL} alt="" />
+                        user &&
+                        <div className='navbar-image'>
+                            <img className='rounded-pill mx-3' width='45px' src={user.photoURL} alt="" />
+                        </div>
                     }
                     {
-                        user?.displayName && <p className='me-3 my-0 fw-bold'>{user.displayName}</p>
+                        user && <p className='navbar-name me-3 my-0 fw-bold'>{user.displayName}</p>
                     }
                     {
                         user ?
-                            <button onClick={handleSignOut} className='btn btn-dark rounded-pill px-4'>Sign Out</button>
+                            <div className='navbar-signout'>
+                                <button onClick={handleSignOut} className='btn btn-dark rounded-pill px-4'>Sign Out</button>
+                            </div>
                             :
-                            <div>
+                            <div className='navbar-button-group'>
                                 <Link to='/login'>
                                     <button className='btn btn-outline-dark rounded-pill px-4'>Login</button>
                                 </Link>

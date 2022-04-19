@@ -6,10 +6,14 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import Loader from '../../Shared/Loader/Loader';
+import { toast, ToastContainer } from 'react-toastify';
 
 const Login = () => {
     const [loginEmail, setLoginEmail] = useState('');
     const [loginPassword, setLoginPassword] = useState('');
+    const [loginEmailError, setLoginEmailError] = useState('');
+    const [loginPasswordError, setLoginPasswordError] = useState('');
+    const [loginEmptyError, setLoginEmptyError] = useState('');
 
     const [
         signInWithEmailAndPassword,
@@ -62,25 +66,52 @@ const Login = () => {
         alert(resetError || googleError || githubError?.message);
     }
 
-    const handleLogin = event => {
-        event.preventDefault();
-        signInWithEmailAndPassword(loginEmail, loginPassword);
+    const handleLogin = () => {
+        if (!loginEmail) {
+            setLoginEmailError('Please enter your email address!')
+            if (!loginPassword) {
+                setLoginPasswordError('Please enter your password!')
+                return;
+            }
+        }
+
+        if (loginEmail && loginPassword) {
+            signInWithEmailAndPassword(loginEmail, loginPassword);
+            setLoginEmailError('');
+            setLoginPasswordError('');
+            setLoginEmptyError('');
+        }
+        else {
+            setLoginEmptyError('Please enter both your email & password!')
+            return;
+        }
     }
 
-    const handleResetPassword = () => {
-        if (loginEmail) {
-            sendPasswordResetEmail(loginEmail);
+    const handleResetPassword = async () => {
+        if (!loginEmail) {
+            setLoginEmailError('Please enter your email address to sent reset link!')
+            setLoginPasswordError('');
+        }
+        else {
+            await sendPasswordResetEmail(loginEmail);
+            setLoginEmailError('');
+            setLoginPasswordError('');
+            setLoginEmptyError('');
+            toast('Password reset email sent!');
         }
     }
 
     return (
         <div className='login mx-auto'>
+            <ToastContainer />
             <h1>Login</h1>
             <p>Stay updated on your fitness world</p>
             <div className='login-input-fields text-center'>
+                <p className='error-message'>{loginEmptyError}</p>
                 <input onBlur={handleLoginEmail} type="email" name="email" id="" placeholder='Enter email' required />
-                <br />
+                <p className='error-message'>{loginEmailError}</p>
                 <input onBlur={handleLoginPassword} type="password" name="password" id="" placeholder='Enter password' required />
+                <p className='error-message'>{loginPasswordError}</p>
                 <p onClick={handleResetPassword} className='forgot-password btn-link'>Forgot password?</p>
                 <button onClick={handleLogin} className='button-login btn rounded-pill' type="submit">Login</button>
                 <p className='link-to-signup'>

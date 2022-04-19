@@ -1,3 +1,4 @@
+/* font Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .form-submit {
@@ -10,6 +11,7 @@
 
 .form-submit h1 {
     font-family: 'Roboto', sans-serif;
+    font-size: 35px;
 }
 
 .form-submit p {
@@ -47,6 +49,10 @@
     color: white;
 }
 
+/*-----------------
+media-query section
+------------------*/
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .form-submit {
         width: 60%;
@@ -56,14 +62,18 @@
 
 @media only screen and (min-width: 577px) and (max-width:767px) {
     .form-submit {
-        width: 90%;
+        width: 80%;
         margin: 100px 0px 40px 0px;
     }
 }
 
-@media only screen and (min-width:340px) and (max-width: 576px) {
+@media only screen and (min-width: 300px) and (max-width: 576px) {
     .form-submit {
         width: 90%;
-        margin: 90px 0px 30px 0px;
+        margin: 80px 0px 20px 0px;
+    }
+
+    .form-submit h1 {
+        font-size: 25px;
     }
 }

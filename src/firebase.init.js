@@ -5,6 +5,12 @@ import { getAuth } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+
+
+/* ----------------------------------------------------------------------------------
+I tried to use Environment Variable, but I was having some error, so I didn't used it.
+------------------------------------------------------------------------------------*/
 const firebaseConfig = {
     apiKey: "AIzaSyCRrDqTd9_J2dgz2ZsvJxolLOnbDMPct1k",
     authDomain: "fitness-buddy-sajidjrahman.firebaseapp.com",

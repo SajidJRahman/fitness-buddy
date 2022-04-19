@@ -1,3 +1,4 @@
+/* font Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .login {
@@ -100,6 +101,10 @@
     padding-left: 10px;
 }
 
+/*-----------------
+media-query section
+------------------*/
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .login {
         width: 60%;
@@ -114,9 +119,9 @@
     }
 }
 
-@media only screen and (min-width:340px) and (max-width: 576px) {
+@media only screen and (min-width:300px) and (max-width: 576px) {
     .login {
         width: 90%;
-        margin: 90px 0px 30px 0px;
+        margin: 80px 0px 20px 0px;
     }
 }

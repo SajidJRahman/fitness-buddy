@@ -7,18 +7,18 @@ import BannerThree from '../../../images/banner/banner-3.jpg';
 
 const Banner = () => {
     return (
-        <Carousel style={{ marginTop: '72px' }} fade>
+        <Carousel className='carousel-banner' fade>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
                     src={BannerOne}
                     alt="First slide"
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className='banner-info'>
                     <h3>Welcome! I'm your new fitness trainer!</h3>
                     <p>I can help you choose what meets your need.</p>
                     <button className='btn button-carousel rounded-pill px-4'>
-                        <a href='#programs'>Book Services</a>
+                        <a href='#services'>Book Services</a>
                     </button>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -29,7 +29,7 @@ const Banner = () => {
                     alt="Second slide"
                 />
 
-                <Carousel.Caption>
+                <Carousel.Caption className='banner-info'>
                     <h3>I currently provide six different programs</h3>
                     <p>You can choose any of them! I plan forward to increase my programs.</p>
                     <button className='btn button-carousel rounded-pill px-4'>
@@ -44,7 +44,7 @@ const Banner = () => {
                     alt="Third slide"
                 />
 
-                <Carousel.Caption>
+                <Carousel.Caption className='banner-info'>
                     <h3>Join classes anywhere, anytime!</h3>
                     <p>You can choose to do practice from anywhere with online videos!</p>
                     <button className='btn button-carousel rounded-pill px-4'>

@@ -11,7 +11,6 @@ const SignUp = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');
     const [emailErrorMessage, setEmailErrorMessage] = useState('');
     const [passwordErrorMessage, setPasswordErrorMessage] = useState('');
     const navigate = useNavigate();
@@ -68,10 +67,6 @@ const SignUp = () => {
         setPassword(event.target.value);
     }
 
-    const handleConfirmPassword = event => {
-        setConfirmPassword(event)
-    }
-
     const validateEmail = email => {
         const testEmail = /\S+@\S+\.\S+/;
         return testEmail.test(email);
@@ -90,13 +85,10 @@ const SignUp = () => {
             return;
         }
 
-        if (password !== confirmPassword) {
+        if (email && password) {
             createUserWithEmailAndPassword(email, password);
-        }
-
-        else {
-            setPasswordErrorMessage("Sorry, your passwords didn't matched!")
-            return;
+            setEmailErrorMessage('');
+            setPasswordErrorMessage('');
         }
     }
 
@@ -109,8 +101,6 @@ const SignUp = () => {
                 <input onBlur={handleEmail} type="email" name="email" id="" placeholder='Enter email' required />
                 <p className='error-message'>{emailErrorMessage}</p>
                 <input onBlur={handlePassword} type="password" name="password" id="" placeholder='Enter password' required />
-                <p className='error-message'>{passwordErrorMessage}</p>
-                <input onBlur={handleConfirmPassword} type="password" name="password" id="" placeholder='Confirm password' required />
                 <p className='error-message'>{passwordErrorMessage}</p>
                 <button onClick={handleSignIn} className='button-sign-up btn rounded-pill' type="submit">Sign Up</button>
                 <p className='link-to-login'>

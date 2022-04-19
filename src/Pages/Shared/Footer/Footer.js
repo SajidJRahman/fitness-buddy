@@ -20,20 +20,12 @@ const Footer = () => {
             </div>
             <div className='footer-navigation'>
                 <div className='footer-links'>
-                    <p>Support</p>
-                    <Link to="/home#footer">Contect Me</Link>
-                    <br />
-                    <Link to="/home#footer">FAQ</Link>
-                    <br />
-                    <Link to="/home#footer">Blogs</Link>
-                    <br />
-                    <Link to="/home#footer">Newsroom</Link>
-                </div>
-                <div className='footer-links'>
                     <p>FitnessBuddy</p>
-                    <Link to="/about">About FitnessBuddy</Link>
+                    <Link to="/about">About Me</Link>
                     <br />
                     <Link to="/checkout">Checkout</Link>
+                    <br />
+                    <Link to="/blogs">Blogs</Link>
                     <br />
                     <Link to="/login">Login</Link>
                     <br />

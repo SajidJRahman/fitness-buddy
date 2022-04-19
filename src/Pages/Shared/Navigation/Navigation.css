@@ -1,3 +1,4 @@
+/* font Lobster */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .navigation {
@@ -37,4 +38,56 @@
     background-color: rgb(48, 155, 255);
     color: white;
     border: 1px solid rgb(48, 155, 255);
+}
+
+/*-----------------
+media-query section
+------------------*/
+
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+    .navbar-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-image img {
+        width: 15%;
+    }
+
+    .navbar-name {
+        text-align: center;
+        margin: 0px !important;
+    }
+
+    .navbar-signout {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .navbar-links {
+        display: block;
+    }
+
+    .navbar-links a {
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-button-group {
+        padding-top: 1px;
+        display: block;
+    }
+
+    .navbar-button-group a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        margin: 5px 0px;
+    }
+
+    .button-navbar-signup {
+        margin: 0px !important;
+    }
 }

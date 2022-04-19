@@ -10,7 +10,7 @@ const Blogs = () => {
             </div>
             <div className='blogs-card'>
                 <h5>Why am I using Firebase? What other options do I have to implement authentication?</h5>
-                <p>Firebase helps me build and run successful apps. It is an application development platform that allows me to create iOS, Android, and Web apps. I mainly use Firebase because it is provided by Google, and I trust Google for their security & privacy. Firebase is very simple & easy to use, all the to-dos are already on the website documentation. Firebase allows me to implement web authentication methods like Email-Password, GitHub, Twitter, Apple, Facebook, Microsoft etc. With some easy steps & with the help of documentation, I can easily implement any of these auth providers. Because of the simplicity of Firebase, I choose to use It.</p>
+                <p>Firebase is an application development platform that allows me to create iOS, Android, and Web apps. I mainly use Firebase because it is provided by Google, and I trust Google for their security & privacy. Firebase is very simple & easy to use, all the to-dos are already on the website documentation. Beside Firebase, some of the other interesting authentication method's names are: MongoDB, Autho, Passport, Okta & JSON Web Token. MongoDB stores data stores data in JSON like document, Autho is a secure single-sign in method, Passport is an authentication method for Node.js, Okta is drop-in authentication service & JSON Web Token represents claims securely between two parties.</p>
             </div>
             <div className='blogs-card'>
                 <h5>What other services does Firebase provide other than Authentication?</h5>

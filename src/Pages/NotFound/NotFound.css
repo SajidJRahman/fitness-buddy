@@ -1,4 +1,17 @@
+/* font Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .not-found {
-    margin-top: 300px;
+    margin-top: 160px;
     margin-bottom: 300px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.not-found h1 {
+    font-size: 250px;
+    margin: 0px;
+}
+
+.not-found p {
+    margin: 0px;
 }

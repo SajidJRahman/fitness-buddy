@@ -1,3 +1,14 @@
+/* font Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.carousel-banner {
+    margin-top: 74px;
+}
+
+.banner-info {
+    font-family: 'Roboto', sans-serif;
+}
+
 .button-carousel {
     background-color: rgb(48, 155, 255);
     color: white;
@@ -11,4 +22,60 @@
 
 .button-carousel a:hover {
     color: black;
+}
+
+/*-----------------
+media-query section
+------------------*/
+
+@media only screen and (min-width: 993px) and (max-width: 1120px) {
+    .carousel-banner {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:992px) {
+    .carousel-banner {
+        margin-top: 68px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:767px) {
+    .carousel-banner {
+        margin-top: 64px;
+    }
+
+    .banner-info h3 {
+        font-size: 18px;
+    }
+
+    .banner-info p {
+        font-size: 10px;
+    }
+
+    .banner-info button {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width: 576px) {
+    .carousel-banner {
+        margin-top: 59px;
+    }
+
+    .banner-info {
+        padding-top: 0px;
+    }
+
+    .banner-info h3 {
+        font-size: 15px;
+    }
+
+    .banner-info p {
+        font-size: 10px;
+    }
+
+    .banner-info button {
+        font-size: 10px;
+    }
 }

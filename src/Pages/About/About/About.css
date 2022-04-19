@@ -1,8 +1,14 @@
+/* font Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .about-me {
-    margin-top: 300px;
-    margin-bottom: 300px;
+    margin-top: 170px;
+    margin-bottom: 250px;
+}
+
+.about-me img {
+    width: 20%;
+    margin-bottom: 15px;
 }
 
 .about-me h2 {
@@ -11,4 +17,19 @@
 
 .about-me p {
     font-family: 'Roboto', sans-serif;
+}
+
+/*-----------------
+media-query section
+------------------*/
+
+@media only screen and (min-width: 300px) and (max-width: 992px) {
+    .about-me {
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .about-me img {
+        width: 60%;
+    }
 }
