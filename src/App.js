@@ -10,11 +10,13 @@ import About from './Pages/About/About/About';
 import Footer from './Pages/Shared/Footer/Footer';
 import RequireAuth from './Pages/Authentications/RequireAuth/RequireAuth';
 import NotFound from './Pages/NotFound/NotFound';
+import ScrollToTop from './Pages/ScrollToTop/ScrollToTop';
 
 function App() {
   return (
     <div>
       <Navigation />
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Home />} />
